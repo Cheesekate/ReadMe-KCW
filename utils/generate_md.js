@@ -1,3 +1,24 @@
+function generateBadge(license) {
+    if (license === "MIT/Apache") {
+        return `##Licenses
+        Our product uses MIT/Apache license.
+        <img src="https://img.shields.io/badge/License-/apm/l/:packageName-ff69b4"/>`
+
+    }
+    if (license === "MIT") {
+        return `##Licenses
+        Our product uses MIT license.
+        <img src="https://img.shields.io/badge/License/dub/l/:packageName-ff69b4"/>`
+
+    }
+    if (license === "GPL") {
+        return `##Licenses
+        Our product uses GPL license.
+        <img src="https://img.shields.io/badge/License-/cran/l/:packageName-ff69b4"/>`
+
+    }
+};
+
 module.exports =
     function (answers, gitInfo) {
         const email = gitInfo.email || "No email"
@@ -7,7 +28,7 @@ module.exports =
         # ${answers.project}
 
         ## Description
-        
+        \`\`\`
         ${answers.description}
 
         ## Table of Contents
@@ -18,8 +39,8 @@ module.exports =
         *[Licenses](#license)
         *[Tests](#test)
         *[Questions](#questions)
-
-        ## Installation
+        \`\`\`
+        ## Install
 
         ${answers.install}
 
@@ -31,8 +52,8 @@ module.exports =
         ${answers.credits}
 
         ##Licenses
-        Our product uses ${answers.list} license.
-        <img src="https://img.shields.io/badge/License-${answers.license}-ff69b4"/>
+
+        ${generateBadge(answers.license)}
 
 
         ##Tests
@@ -48,3 +69,5 @@ module.exports =
 
 
     };
+
+

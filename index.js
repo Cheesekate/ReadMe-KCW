@@ -2,8 +2,7 @@
 const fs = require("fs");
 const buildTemplate = require("./utils/generate_md");
 const promptUser = require("./utils/prompt-user");
-const api = require("./utils/api")
-
+const api = require("./utils/api");
 
 
 async function init() {
