@@ -1,12 +1,15 @@
 const fs = require("fs");
-const buildTemplate = require("./generate_md");
-const promptUser = require("./prompt-user");
+const buildTemplate = require("./utils/generate_md");
+const promptUser = require("./utils/prompt-user");
+const api = require("./utils/api")
+
+
 
 async function init() {
     const user = await promptUser();
     console.log(user);
     const README = buildTemplate(user);
-    fs.writeFile("README.md", README, function (err) {
+    fs.writeFile("newREADME.md", README, function (err) {
         if (err) {
             throw err;
         }
