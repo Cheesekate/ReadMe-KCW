@@ -32,10 +32,10 @@ module.exports = function () {
             message: "Who is credited?",
         },
         {
-            name: "list",
-            type: "license",
+            name: "license",
+            type: "list",
             message: "Pick a license:",
-            choices: ["Mozilla", "MIT", "IBM"],
+            choices: ["MIT/Apache", "MIT", "GPL"],
         },
         {
             name: "test",

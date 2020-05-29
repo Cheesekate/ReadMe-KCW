@@ -32,7 +32,7 @@ module.exports =
 
         ##Licenses
         Our product uses ${answers.list} license.
-        <img src="https://img.shields.io/badge/License-${userInput.license}-ff69b4"/>
+        <img src="https://img.shields.io/badge/License-${answers.license}-ff69b4"/>
 
 
         ##Tests
