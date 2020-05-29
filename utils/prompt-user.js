@@ -35,7 +35,7 @@ module.exports = function () {
             name: "list",
             type: "license",
             message: "Pick a license:",
-            choices: ["Mozilla", "Zlib", "IBM"],
+            choices: ["Mozilla", "MIT", "IBM"],
         },
         {
             name: "test",

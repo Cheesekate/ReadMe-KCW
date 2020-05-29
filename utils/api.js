@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-module.exports = api;
+
 
 const api = {
     getUser(username) {
@@ -9,3 +9,4 @@ const api = {
     }
 };
 
+module.exports = api;
