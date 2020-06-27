@@ -1,9 +1,9 @@
 
-        # project-1
+        # employee-tracker
 
         ## Description
         ```
-        kes
+        n/a
 
         ## Table of Contents
 
@@ -16,24 +16,24 @@
         ```
         ## Install
 
-        dfsav
+        n/a
 
         ## Usage
 
-        
+        n/a
 
         ## Authors
-        afs
+        n/a
 
         ##Licenses
 
         ##Licenses
-        Our product uses MIT license.
-        <img src="https://img.shields.io/badge/License/dub/l/:packageName-ff69b4"/>
+        Our product uses GPL license.
+        <img src="https://img.shields.io/badge/License-/cran/l/:packageName-ff69b4"/>
 
 
         ##Tests
-        fd
+        n/a
 
         ## Questions
 

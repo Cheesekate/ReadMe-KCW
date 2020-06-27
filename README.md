@@ -1,1 +1,1 @@
-What we did and giff
+Please check the assets folder for the gifs.
